@@ -1,0 +1,247 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 영역 확인하기 위해 */
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.section__option {
+  border: 1px solid red;
+  flex: 1 1 0;
+}
+
+.option-wrapper {
+  border: 1px solid blue;
+  margin: 0 32px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.modes-wrapper {
+  border: 1px solid green;
+  width: 118.2px;
+  display: flex;
+}
+
+.button__mode {
+  border: 1px solid brown;
+  width: 49.6px;
+  margin: 0 auto;
+}
+
+.option-link {
+  border: 1px solid green;
+  width: 73.93px;
+}
+
+.header {
+  border: 1px solid red;
+  flex: 1 1 0;
+}
+
+.navigation {
+  border: 1px solid blue;
+  height: 100%;
+  /* margin: auto; */
+  margin: 0 32px;
+  display: flex;
+}
+
+.logo {
+  border: 1px solid green;
+  flex: 1 1 0;
+}
+
+.navbar-menu {
+  border: 1px solid green;
+  flex: 5 1 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-wrapper {
+  border: 1px solid brown;
+  width: 40%;
+}
+
+.interaction-wrapper {
+  border: 1px solid brown;
+  width: 40%;
+}
+
+.main {
+  border: 1px solid red;
+  flex: 12 1 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.section__slider-contents {
+  border: 1px solid blue;
+  flex: 2 1 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0 32px;
+}
+
+.card__slider-content {
+  border: 1px solid green;
+  display: flex;
+  justify-content: space-between;
+  flex: 3 1 0;
+}
+
+.wrapper__slider-content-list {
+  border: 1px solid green;
+  flex: 1 1 0;
+}
+
+.description-wrapper__slider-content {
+  border: 1px solid brown;
+  flex: 1 1 0;
+}
+
+.img__slider-content {
+  border: 1px solid brown;
+  flex: 1 1 0;
+}
+
+.search {
+  border: 1px solid blue;
+  flex: 1 1 0;
+}
+
+.wrapper__search {
+  border: 1px solid green;
+  height: 100%;
+  margin: 0 120px;
+}
+
+.lecture__my-previous {
+  border: 1px solid blue;
+  flex: 1 1 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 120px;
+}
+
+.wrapper__title {
+  border: 1px solid palevioletred;
+  flex: 1 1 0;
+}
+
+.container__my-previous-lectures {
+  border: 1px solid palevioletred;
+  flex: 3 1 0;
+}
+
+.lecture__similar-students {
+  border: 1px solid blue;
+  flex: 2 1 0;
+  margin: 0 120px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container__lectures {
+  border: 1px solid palevioletred;
+  flex: 3 1 0;
+}
+
+.lecture__popular-javascript {
+  border: 1px solid blue;
+  flex: 2 1 0;
+  margin: 0 120px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.button__browse-lecture-list--left,
+.button__browse-lecture-list--right {
+  position: absolute;
+  top: 50%;
+}
+
+.button__browse-lecture-list--left {
+  left: 0;
+}
+
+.button__browse-lecture-list--right {
+  right: 0;
+}
+
+.lecture__popular-git {
+  border: 1px solid blue;
+  flex: 2 1 0;
+  margin: 0 120px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container__more-lectures {
+  border: 1px solid blue;
+  flex: 1 1 0;
+  margin: 0 120px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container__lecture-categories {
+  border: 1px solid palevioletred;
+  flex: 2 1 0;
+}
+
+.lecture__new {
+  border: 1px solid blue;
+  flex: 2 1 0;
+  margin: 0 120px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.container__articles {
+  border: 1px solid blue;
+  flex: 2 1 0;
+}
+
+.container__road-map {
+  border: 1px solid blue;
+  flex: 2 1 0;
+}
+
+.banner__about-business {
+  border: 1px solid blue;
+  flex: 1 1 0;
+}
+
+.banner__about-services {
+  border: 1px solid blue;
+  flex: 2 1 0;
+}
+
+.footer {
+  border: 1px solid red;
+  flex: 2 1 0;
+}
+
+.section__notification {
+  border: 1px solid red;
+  flex: 1 1 0;
+}
+
+.section__chat {
+  border: 1px solid red;
+  flex: 1 1 0;
+}
