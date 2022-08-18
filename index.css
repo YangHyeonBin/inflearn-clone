@@ -4,6 +4,33 @@
   padding: 0;
 }
 
+/* main-color-code
+#00C471 */
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+
+.sr-only {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  z-index: -1;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* 영역 확인하기 위해 */
 body {
   display: flex;
@@ -13,79 +40,66 @@ body {
 
 .section__option {
   border: 1px solid red;
-  flex: 1 1 0;
 }
 
 .option-wrapper {
   border: 1px solid blue;
-  margin: 0 32px;
-  height: 100%;
+  /* margin: 0 32px; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .modes-wrapper {
   border: 1px solid green;
-  width: 118.2px;
   display: flex;
 }
 
-.button__mode {
+.anchor__mode {
   border: 1px solid brown;
-  width: 49.6px;
-  margin: 0 auto;
+  display: flex;
 }
 
 .option-link {
   border: 1px solid green;
-  width: 73.93px;
 }
 
 .header {
   border: 1px solid red;
-  flex: 1 1 0;
 }
 
 .navigation {
   border: 1px solid blue;
-  height: 100%;
-  /* margin: auto; */
-  margin: 0 32px;
   display: flex;
 }
 
 .logo {
   border: 1px solid green;
-  flex: 1 1 0;
 }
 
 .navbar-menu {
   border: 1px solid green;
-  flex: 5 1 0;
   display: flex;
   justify-content: space-between;
 }
 
 .menu-wrapper {
   border: 1px solid brown;
-  width: 40%;
+  display: flex;
 }
 
 .interaction-wrapper {
   border: 1px solid brown;
-  width: 40%;
 }
 
 .main {
   border: 1px solid red;
-  flex: 12 1 0;
   display: flex;
   flex-direction: column;
 }
 
 .section__slider-contents {
   border: 1px solid blue;
-  flex: 2 1 0;
   display: flex;
   flex-direction: column;
   padding: 0 32px;
@@ -95,27 +109,29 @@ body {
   border: 1px solid green;
   display: flex;
   justify-content: space-between;
-  flex: 3 1 0;
 }
 
 .wrapper__slider-content-list {
   border: 1px solid green;
-  flex: 1 1 0;
 }
 
 .description-wrapper__slider-content {
   border: 1px solid brown;
-  flex: 1 1 0;
 }
 
 .img__slider-content {
   border: 1px solid brown;
-  flex: 1 1 0;
+  width: 100%;
+}
+
+.top-50 {
+  background: center no-repeat
+    url('https://cdn.inflearn.com/public/main_sliders/7f3b415a-7267-49fc-9c68-9926b8c5f600/%5B22%E1%84%90%E1%85%A2%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%86%AB%E1%84%83%E1%85%B5%E1%86%BC%5Db2b_top50_main_521.gif');
+  background-size: contain;
 }
 
 .search {
   border: 1px solid blue;
-  flex: 1 1 0;
 }
 
 .wrapper__search {
@@ -126,7 +142,6 @@ body {
 
 .lecture__my-previous {
   border: 1px solid blue;
-  flex: 1 1 0;
   display: flex;
   flex-direction: column;
   margin: 0 120px;
@@ -134,17 +149,14 @@ body {
 
 .wrapper__title {
   border: 1px solid palevioletred;
-  flex: 1 1 0;
 }
 
 .container__my-previous-lectures {
   border: 1px solid palevioletred;
-  flex: 3 1 0;
 }
 
 .lecture__similar-students {
   border: 1px solid blue;
-  flex: 2 1 0;
   margin: 0 120px;
   display: flex;
   flex-direction: column;
@@ -153,19 +165,17 @@ body {
 
 .container__lectures {
   border: 1px solid palevioletred;
-  flex: 3 1 0;
 }
 
 .lecture__popular-javascript {
   border: 1px solid blue;
-  flex: 2 1 0;
   margin: 0 120px;
   display: flex;
   flex-direction: column;
   position: relative;
 }
 
-.button__browse-lecture-list--left,
+/* .button__browse-lecture-list--left,
 .button__browse-lecture-list--right {
   position: absolute;
   top: 50%;
@@ -177,11 +187,10 @@ body {
 
 .button__browse-lecture-list--right {
   right: 0;
-}
+} */
 
 .lecture__popular-git {
   border: 1px solid blue;
-  flex: 2 1 0;
   margin: 0 120px;
   display: flex;
   flex-direction: column;
@@ -190,7 +199,6 @@ body {
 
 .container__more-lectures {
   border: 1px solid blue;
-  flex: 1 1 0;
   margin: 0 120px;
   display: flex;
   flex-direction: column;
@@ -199,12 +207,14 @@ body {
 
 .container__lecture-categories {
   border: 1px solid palevioletred;
-  flex: 2 1 0;
+}
+
+.item__lecture-category {
+  background: url('https://cdn.inflearn.com/public/main/category/icons_sprites.png');
 }
 
 .lecture__new {
   border: 1px solid blue;
-  flex: 2 1 0;
   margin: 0 120px;
   display: flex;
   flex-direction: column;
@@ -213,35 +223,28 @@ body {
 
 .container__articles {
   border: 1px solid blue;
-  flex: 2 1 0;
 }
 
 .container__road-map {
   border: 1px solid blue;
-  flex: 2 1 0;
 }
 
 .banner__about-business {
   border: 1px solid blue;
-  flex: 1 1 0;
 }
 
 .banner__about-services {
   border: 1px solid blue;
-  flex: 2 1 0;
 }
 
 .footer {
   border: 1px solid red;
-  flex: 2 1 0;
 }
 
 .section__notification {
   border: 1px solid red;
-  flex: 1 1 0;
 }
 
 .section__chat {
   border: 1px solid red;
-  flex: 1 1 0;
 }
