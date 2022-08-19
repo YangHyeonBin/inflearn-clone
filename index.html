@@ -16,7 +16,7 @@
       <div class="option-wrapper">
         <ul class="modes-wrapper">
           <li>
-            <a href="#" class="anchor__mode">
+            <a href="#" class="anchor__mode active">
               <svg
                 aria-hidden="true"
                 width="20"
@@ -96,11 +96,11 @@
         </div>
         <div class="navbar-menu">
           <ul class="menu-wrapper">
-            <li class="menu-item"><a href="#">강의</a></li>
-            <li class="menu-item"><a href="#">로드맵</a></li>
-            <li class="menu-item"><a href="#">멘토링</a></li>
-            <li class="menu-item"><a href="#">커뮤니티</a></li>
-            <li class="menu-item"><a href="#">인프런</a></li>
+            <li><a href="#" class="menu-item">강의</a></li>
+            <li><a href="#" class="menu-item">로드맵</a></li>
+            <li><a href="#" class="menu-item">멘토링</a></li>
+            <li><a href="#" class="menu-item">커뮤니티</a></li>
+            <li><a href="#" class="menu-item">인프런</a></li>
           </ul>
           <div class="interaction-wrapper">
             <div class="container__serach-bar-mini">
@@ -113,11 +113,13 @@
               <i class="fa-solid fa-pen"></i>
               최근강의
             </a>
-            <a href="#" aria-label="강의 장바구니"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
-            <a href="#" aria-label="알림"><i class="fa-regular fa-bell"></i></a>
-            <button aria-label="내 정보"></button>
+            <a href="#" class="anchor__cart" aria-label="강의 장바구니">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+            <a href="#" class="anchor__alert" aria-label="알림">
+              <i class="fa-regular fa-bell"></i>
+            </a>
+            <button class="button__user-info" aria-label="내 정보">
               <i class="fa-regular fa-user"></i>
             </button>
           </div>
@@ -126,59 +128,67 @@
     </header>
     <main class="main">
       <section class="section__slider-contents">
-        <a class="card__slider-content">
-          <div class="description-wrapper__slider-content">
-            <div>오늘 뭐 듣지?</div>
-            <h1 >무슨 강의 들을지 고민이라면? 현직자 Top 50 먼저 보기 👀</h1>
-            <p>입문부터 실전까지! 믿고 보는 실무자 Pick</p>
-          </div>
-          <div class="img__slider-content top-50"></div>
-        </a>
+        <ul class="slider-contents">
+          <li class="slider-content">
+            <a class="card__slider-content">
+              <div class="description-wrapper__slider-content">
+                <div class="tag-wrapper__slider-content-description">
+                  <div class="tag__slider-content-description">오늘 뭐 듣지?</div>
+                </div>
+                <h1 class="title__slider-content-item">무슨 강의 들을지 고민이라면?<br />현직자 Top 50 먼저 보기 👀</h1>
+                <p class="description__slider-content-item">입문부터 실전까지!<br />믿고 보는 실무자 Pick</p>
+              </div>
+              <div class="img__slider-content top-50"></div>
+            </a>
+          </li>
+        </ul>
         <div class="wrapper__slider-content-list">
-          <div class="slider-pagination-controller">
-            <span class="slider-pagination-number">
-              <span class="slider-pagination__current-page">1</span>
-              /
-              <span class="slider-pagination__max-page">11</span>
-            </span>
-            <div class="slider-pagination-button-container">
-              <button type="button" aria-label="왼쪽으로 넘기기"><i class="fa-solid fa-chevron-left"></i></button>
-              <button type="button" aria-hidden="true" ><i class="fa-solid fa-play"></i></button>
-              <button type="button" aria-label="오른쪽으로 넘기기"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="grid-wrapper__slider-content-list">
+            <div class="slider-pagination-controller">
+              <span class="slider-pagination-number">
+                <span class="slider-pagination__current-page">1</span>
+                /
+                <span class="slider-pagination__max-page">11</span>
+              </span>
+              <div class="slider-pagination-button-container">
+                <button type="button" aria-label="왼쪽으로 넘기기"><i class="fa-solid fa-chevron-left"></i></button>
+                <button type="button" aria-hidden="true" ><i class="fa-solid fa-play"></i></button>
+                <button type="button" aria-label="오른쪽으로 넘기기"><i class="fa-solid fa-chevron-right"></i></button>
+              </div>
             </div>
+            <ul class="container__slider-content-list">
+              <li class="item__slider-content active"><button type="button">Top 50 👑</button></li>
+              <li class="item__slider-content"><button type="button">게임 이펙트</button></li>
+              <li class="item__slider-content"><button type="button">Azure 자격증</button></li>
+              <li class="item__slider-content"><button type="button">UX Writing</button></li>
+              <li class="item__slider-content"><button type="button">코프링 실전편</button></li>
+              <li class="item__slider-content"><button type="button">신규 강의 🎁</button></li>
+              <li class="item__slider-content"><button type="button">인포커스 #3</button></li>
+              <li class="item__slider-content"><button type="button">지식공유신청</button></li>
+              <li class="item__slider-content"><button type="button">왕초보 모여라 😎</button></li>
+            </ul>
+            <button type="button" aria-label="더 보기" class="see-more__slider-content"><i class="fa-solid fa-chevron-down"></i></button>
           </div>
-          <ul class="container__slider-content-list">
-            <li class="item__slider-content"><button type="button">Top 50 👑</button></li>
-            <li class="item__slider-content"><button type="button">게임 이펙트</button></li>
-            <li class="item__slider-content"><button type="button">Azure 자격증</button></li>
-            <li class="item__slider-content"><button type="button">UX Writing</button></li>
-            <li class="item__slider-content"><button type="button">코프링 실전편</button></li>
-            <li class="item__slider-content"><button type="button">신규 강의 🎁</button></li>
-            <li class="item__slider-content"><button type="button">인포커스 #3</button></li>
-            <li class="item__slider-content"><button type="button">지식공유신청</button></li>
-            <li class="item__slider-content"><button type="button">왕초보 모여라 😎</button></li>
-          </ul>
-          <button type="button" aria-label="더 보기"><i class="fa-solid fa-chevron-down"></i></button>
         </div>
       </section>
       <section class="search">
         <div class="wrapper__search">
-          <p>배우고, 나누고, 성장하세요</p>
+          <p class="title__search">배우고, 나누고, 성장하세요</p>
           <div class="container__search-bar-big">
             <input type="text" placeholder="배우고 싶은 지식을 입력해보세요." />
             <button type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
           </div>
-          <ul class="container__hash-tags">
-            <li><a href="#">#MVC</a></li>
-            <li><a href="#">#Spring Boot</a></li>
-            <li><a href="#">#Back-End</a></li>
-            <li><a href="#">#JPA</a></li>     
-            <li><a href="#">#Front-end</a></li>
-            <li><a href="#">#Python</a></li>
-            <li><a href="#">#Java</a></li>
-            <li><a href="#">#Sping</a></li>
-            <li><a href="#">#게임개발</a></li>
-            <li><a href="#">#JavaScript</a></li>
+          <ul class="container__popular-hash-tags" aria-label="인기 태그 10선">
+            <li><a href="#" class="anchor__popular-has-tag">#MVC</a></li>
+            <li><a href="#" class="anchor__popular-has-tag">#Spring Boot</a></li>
+            <li><a href="#" class="anchor__popular-has-tag">#Back-End</a></li>
+            <li><a href="#" class="anchor__popular-has-tag">#JPA</a></li>     
+            <li><a href="#" class="anchor__popular-has-tag">#Front-end</a></li>
+            <li><a href="#" class="anchor__popular-has-tag">#Python</a></li>
+            <li><a href="#" class="anchor__popular-has-tag">#Java</a></li>
+            <li><a href="#" class="anchor__popular-has-tag">#Sping</a></li>
+            <li><a href="#" class="anchor__popular-has-tag">#게임개발</a></li>
+            <li><a href="#" class="anchor__popular-has-tag">#JavaScript</a></li>
           </ul>
         </div>
       </section>
@@ -191,7 +201,7 @@
           <article class="item__my-previous-lecture">
             <img src="https://cdn.inflearn.com/public/courses/326757/cover/91481840-f625-4f49-b005-da4b87c28526/326757-eng.png" alt="코딩은 실전이다! Git알못을 위한 깃린이코스(Git, Github 실습위주)">
             <div class="content-wrapper__my-previous-lecture">
-              <h3 class="content-title__my-previous-lecture">코딩은 실전이다! Git알못을 위한 깃린이코스(Git, Github 실습위주)</h3>
+              <h3 class="content-title__my-previous-lecture">코딩은 실전이다! - Git알못을 위한 깃린이코스(Git, Github 실습위주)</h3>
               <div class="content-info-container__my-previous-lecture">
                 <div class="content-info__my-previous-lecture">
                   <div>
@@ -209,24 +219,22 @@
             </div>
           </article>
           <article class="item__my-previous-lecture">
-            <div class="item__my-previous-lecture">
-              <img src="https://cdn.inflearn.com/public/courses/327974/cover/3b014384-8b3e-4f66-a4de-a94ffff11f58/Modern%20Javascript%20Deep%20Dive.png" alt="모던 자바스크립트 딥다이브 스터디">
-              <div class="content-wrapper__my-previous-lecture">
-                <h3 class="content-title__my-previous-lecture">모던 자바스크립트 딥다이브 스터디</h3>
-                <div class="content-info-container__my-previous-lecture">
-                  <div class="content-info__my-previous-lecture">
-                    <div>
-                      기한: <span>무제한</span>
-                      |
-                      진도율: <span>7.69%</span>
-                    </div>
-                    <progress max="100" value="7.69"></progress>
+            <img src="https://cdn.inflearn.com/public/courses/327974/cover/3b014384-8b3e-4f66-a4de-a94ffff11f58/Modern%20Javascript%20Deep%20Dive.png" alt="모던 자바스크립트 딥다이브 스터디">
+            <div class="content-wrapper__my-previous-lecture">
+              <h3 class="content-title__my-previous-lecture">모던 자바스크립트 딥다이브 스터디</h3>
+              <div class="content-info-container__my-previous-lecture">
+                <div class="content-info__my-previous-lecture">
+                  <div>
+                    기한: <span>무제한</span>
+                    |
+                    진도율: <span>7.69%</span>
                   </div>
-                  <a href="#" class="anchor__play-lecture">
-                    바로 학습
-                    <i class="fa-solid fa-play"></i>
-                  </a>
+                  <progress max="100" value="7.69"></progress>
                 </div>
+                <a href="#" class="anchor__play-lecture">
+                  바로 학습
+                  <i class="fa-solid fa-play"></i>
+                </a>
               </div>
             </div>
           </article>
