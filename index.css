@@ -169,26 +169,20 @@ input {
   border: 1px solid red;
 }
 
-.section__slider-contents {
-  border: 1px solid blue;
-}
-
-.slider-content {
-  background-color: #d2d9dd;
+.wrapper__slider-img-and-content {
   display: flex;
   justify-content: center;
+  align-items: center;
+  background-color: #d2d9dd;
 }
 
-.card__slider-content {
-  height: 20rem;
-  border: 1px solid green;
-  max-width: 75rem;
-  display: flex;
-}
-
-.description-wrapper__slider-content {
-  border: 1px solid brown;
-  max-width: 37.5rem;
+.img__slider-content {
+  background: center no-repeat
+    url('https://cdn.inflearn.com/public/main_sliders/7f3b415a-7267-49fc-9c68-9926b8c5f600/%5B22%E1%84%90%E1%85%A2%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%86%AB%E1%84%83%E1%85%B5%E1%86%BC%5Db2b_top50_main_521.gif');
+  background-size: contain;
+  max-width: 50%;
+  width: 100%;
+  padding-bottom: 20rem;
 }
 
 .tag-wrapper__slider-content-description {
@@ -213,17 +207,6 @@ input {
 
 .description__slider-content-item {
   white-space: pre;
-}
-
-.img__slider-content {
-  border: 1px solid brown;
-  width: 100%;
-}
-
-.top-50 {
-  background: center no-repeat
-    url('https://cdn.inflearn.com/public/main_sliders/7f3b415a-7267-49fc-9c68-9926b8c5f600/%5B22%E1%84%90%E1%85%A2%E1%84%80%E1%85%B3%E1%84%85%E1%85%A2%E1%86%AB%E1%84%83%E1%85%B5%E1%86%BC%5Db2b_top50_main_521.gif');
-  background-size: contain;
 }
 
 .wrapper__slider-content-list {
@@ -392,6 +375,7 @@ input {
 
 .wrapper__title {
   border: 1px solid palevioletred;
+  color: #1e1e1e;
 }
 
 .container__my-previous-lectures {
@@ -432,6 +416,19 @@ input {
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.continaer__lectures {
+  display: flex;
+}
+
+.item__lecture {
+  width: 14rem;
+}
+
+.item__lecture img {
+  width: 14rem;
+  height: 9rem;
 }
 
 .container__lectures {

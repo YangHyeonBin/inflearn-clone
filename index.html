@@ -131,14 +131,16 @@
         <ul class="slider-contents">
           <li class="slider-content">
             <a class="card__slider-content">
-              <div class="description-wrapper__slider-content">
-                <div class="tag-wrapper__slider-content-description">
-                  <div class="tag__slider-content-description">오늘 뭐 듣지?</div>
+              <div class="wrapper__slider-img-and-content">
+                <div class="description-wrapper__slider-content">
+                  <div class="tag-wrapper__slider-content-description">
+                    <div class="tag__slider-content-description">오늘 뭐 듣지?</div>
+                  </div>
+                  <h1 class="title__slider-content-item">무슨 강의 들을지 고민이라면?<br />현직자 Top 50 먼저 보기 👀</h1>
+                  <p class="description__slider-content-item">입문부터 실전까지!<br />믿고 보는 실무자 Pick</p>
                 </div>
-                <h1 class="title__slider-content-item">무슨 강의 들을지 고민이라면?<br />현직자 Top 50 먼저 보기 👀</h1>
-                <p class="description__slider-content-item">입문부터 실전까지!<br />믿고 보는 실무자 Pick</p>
+                <div class="img__slider-content top-50"></div>
               </div>
-              <div class="img__slider-content top-50"></div>
             </a>
           </li>
         </ul>
@@ -193,10 +195,14 @@
         </div>
       </section>
       <section class="lecture-wrapper__my-previous">
-        <h2 class="wrapper__title">
-          나의 최근 학습 강의
-          <span aria-hidden="true" class="icon__title-decoration"><i class="fa-solid fa-chevron-right"></i></span>
-        </h2>
+        <div class="title-wrapper__lecture-container">
+          <a href="#">
+            <h2 class="title__lecture-container">
+              나의 최근 학습 강의
+              <span aria-hidden="true" class="icon__title-decoration"><i class="fa-solid fa-chevron-right"></i></span>
+            </h2>
+          </a>
+        </div>
         <div class="container__my-previous-lectures">
           <article class="item__my-previous-lecture">
             <img src="https://cdn.inflearn.com/public/courses/326757/cover/91481840-f625-4f49-b005-da4b87c28526/326757-eng.png" alt="코딩은 실전이다! Git알못을 위한 깃린이코스(Git, Github 실습위주)">
@@ -241,7 +247,7 @@
         </div>
       </section>
       <section class="lecture-wrapper__similar-students">
-        <h2 class="wrapper__title">
+        <h2 class="title__lecture-container">
           나와 비슷한 사람들이 수강한 강의
         </h2>
         <div class="container__lectures">
@@ -363,7 +369,7 @@
         </div>
       </section>
       <section class="lecture__popular-javascript">
-        <div class="wrapper__title">
+        <div class="title__lecture-container">
           <h2 class="title">
             내가 학습한 <span>JavaScript</span> 분야 인기 강의
             <span aria-hidden="true" class="icon__title-decoration"><i class="fa-solid fa-chevron-right"></i></span>
@@ -485,7 +491,7 @@
         </div>
       </section>
       <section class="lecture__popular-git">
-        <div class="wrapper__title">
+        <div class="title__lecture-container">
           <h2 class="title">
             내가 학습한 <span>Git</span> 분야 인기 강의
             <span aria-hidden="true" class="icon__title-decoration"><i class="fa-solid fa-chevron-right"></i></span>
@@ -609,7 +615,7 @@
         </div>
       </section>
       <section class="container__more-lectures">
-        <div class="wrapper__title"><h2>더 둘러보기</h2></div>
+        <div class="title__lecture-container"><h2>더 둘러보기</h2></div>
         <div class="container__lecture-categories">
           <button class="button__browse-lecture-list--left" type="button" aria-label="왼쪽으로 넘기기">
             <i class="fa-solid fa-chevron-left"></i>
@@ -626,7 +632,7 @@
         </div>
       </section>
       <section class="lecture__new">
-        <div class="wrapper__title">
+        <div class="title__lecture-container">
           <h2 class="title">
             따끈따끈, 신규 강의를 만나보세요! 🙋🏻‍♀️ <span class="tag__new-lecture">NEW!!</span>
             <span aria-hidden="true" class="icon__title-decoration"><i class="fa-solid fa-chevron-right"></i></span>
@@ -707,7 +713,7 @@
         </div>
       </section>
       <section class="wrapper__articles">
-        <div class="wrapper__title">
+        <div class="title__lecture-container">
           <h2 class="title">
             읽어보기
             <span aria-hidden="true" class="icon__title-decoration"><i class="fa-solid fa-chevron-right"></i></span>
@@ -746,7 +752,7 @@
         </div>
       </section>
       <section class="container__road-map">
-        <div class="wrapper__title">
+        <div class="title__lecture-container">
           <h2 class="title">
             기본부터 실무까지 제시해주는 로드맵 🏃🏻‍♀️ <span class="tag__road-map">RoadMap!!</span>
             <span aria-hidden="true" class="icon__title-decoration"><i class="fa-solid fa-chevron-right"></i></span>
